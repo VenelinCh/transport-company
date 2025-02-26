@@ -97,7 +97,6 @@ public static Set<Employee> getCompanyEmployee(long id){
         return company.getEmployees();
 }
 
-//vremenno .eventualno da se napravi s id
     public static Company updateCompanyNoEmployee(Company company){
         try(Session session = SessionFactoryUtil.getSessionFactory().openSession()){
             Transaction transaction = session.beginTransaction();
@@ -182,5 +181,4 @@ public static Set<Employee> getCompanyEmployee(long id){
         }
         return payments;
     }
-
 }

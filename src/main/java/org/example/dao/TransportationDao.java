@@ -103,7 +103,7 @@ public class TransportationDao {
         }
         return count;
     }
-    public static Long  countByCompany(long id){//edit it
+    public static Long  countByCompany(long id){
         Long count;
         try(Session session = SessionFactoryUtil.getSessionFactory().openSession()){
             Transaction transaction = session.beginTransaction();
